@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>
+    Loterie Korunka - vaše chance vyhrát
+  </title>
+</head>
+
+<body class="korunka-frontend">
+
+<div id="blok-01">
+  <div class="container">
+    <div class="block">
+      <h1 class="logo">
+        <a href="http://www.korunka.eu/">
+          <img src="/images/logo_production_sikme.png" alt="Korunka">
+        </a>
+      </h1>
+      <h2>Spousta šťastných výherců každý den</h2>
+
+      {if count($vyhry) > 0}
+      <a href="#" class="moveLeft">&lt;</a>
+
+      <div class="list">
+        {foreach $vyhry as $vyhra}
+        <div {if !$iterator->isFirst()} style="display: none"{/if}>
+          <p>{$vyhra['datum']} {$vyhra['typ']} slosování</p>
+          <h3>
+            <a href="{plink :Korunka:DetailTiketu: $vyhra['cislo'], $vyhra['cas']}">
+              Výhra {$vyhra['vyhra']}
+            </a>
+          </h3>
+          <p>{$vyhra['hra']}: {$vyhra['mesto']}</p>
+        </div>
+        {/foreach}
+      </div>
+
+      <a href="#" class="moveRight">&gt;</a>
+      {else}
+      <p class="p_zadne-vyhry">Za poslední dvě slosování není žádný výherní tiket.</p>
+      {/if}
+    </div>
+  </div>
+</div>
+
+<div id="blok-02-shadow">
+  <div id="blok-02" class="template-2b">
+    <div id="blok-02-promo">
+      <div class="container clearfix">
+        <div class="menu open_submenu">
+          <menu>
+            <ul>
+              <li>
+                <a href="https://www.korunka.eu/">Hlavní</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/jak-hrat">Jak hrát</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/kde-hrat">Kde hrát</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/vsadit">Vsadit</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/vysledky">Výsledky</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/odmeny-za-vernost">Odměny za
+                  věrnost</a>
+              </li>
+              <li>
+                <a href="https://www.korunka.eu/o-korunce">O Korunce</a>
+              </li>
+            </ul>
+          </menu>
+        </div>
+
+        <div class="content">
+          <h1>Nějaký text</h1>
+          <p>Lorem ipsum dolor et sit amet,ipsum dolor et sit amet,ipsum dolor
+            et sit amet,ipsum dolor et sit amet,ipsum dolor et sit amet,ipsum
+            dolor et sit amet,ipsum dolor et sit amet,ipsum dolor et sit amet,
+            ipsum dolor et sit amet, </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="blok-03">
+  <div class="foot block">
+    <div class="container contact" style="position: relative">
+      <div class="left" style="float: left">
+        <p>
+          Copyright © 2013 - {date('Y')}
+          Loterie&nbsp;Korunka&nbsp;a.s.
+          <a href="https://www.korunka.eu/"
+             class="open-in-new-tab">www.korunka.eu</a>
+          Všechna práva vyhrazena.
+        </p>
+      </div>
+      <div class="right" style="float: right">
+        <p>
+          Volejte <strong>233 090 890</strong> Po-Ne 8:00-19:00
+        </p>
+        <p>
+          Napište nám: <a href="mailto:info@korunka.eu">info@korunka.eu</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

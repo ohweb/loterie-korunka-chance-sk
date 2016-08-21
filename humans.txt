@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ondra Hlaváč -- Lead Developer -- @babant
 
 # THANKS
 
-    <name>
+    Pavel Heral - Idea microsite.
+    Petr Žák    - originální vývojař komponenty Spousta Šťastných
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    AJAX

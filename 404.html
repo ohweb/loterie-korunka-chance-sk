@@ -1,60 +1,173 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="sk">
 <head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Lotérie Korunka - Vaša šanca vyhrať!</title>
+  <meta name="description" content="Korunka je lotéria, v ktorej je v každom
+  žrebovaní z čísel 1 až 49 vylosovaných 6 čísiel výherných.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+
+<header>
+  <div class="container">
+
+    <div class="logo">
+      <a href="http://www.korunka.eu/">
+        <img src="/img/logo_production_sikme.png" alt="Loterie Korunka">
+      </a>
+    </div>
+
+    <div class="spousta-stastnych-control">
+
+      <h2>Spousta šťastných výherců každý den</h2>
+
+      <a href="#" class="moveLeft">&lt;</a>
+
+      <div class="list">
+      </div>
+      <!-- Template nejlepší výhry -->
+      <div style="display: none" class="vyhra template">
+        <p><span class="datum"></span> <span class="slosovani"></span> slosování</p>
+        <h3>
+          <a href="">Výhra <span class="vyhra"></span></a>
+        </h3>
+        <p><span class="hra"></span>: <span class="mesto"></span></p>
+      </div>
+      <!-- /template -->
+
+      <a href="#" class="moveRight">&gt;</a>
+
+    </div>
+  </div>
+</header>
+
+
+<section id="page-bg-shadow">
+  <section id="page-bg-top">
+    <section class="container clearfix">
+
+      <menu>
+        <ul>
+          <li>
+            <a href="https://www.korunka.eu/">Hlavné</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/jak-hrat">Ako hráť</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/kde-hrat">Kde hráť</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/vsadit">Staviť</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/vysledky">Výsledky</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/odmeny-za-vernost">Odmeny za
+              vernosť</a>
+          </li>
+          <li>
+            <a href="https://www.korunka.eu/o-korunce">O Korunke</a>
+          </li>
+        </ul>
+      </menu>
+
+      <section class="content">
+        <h1>404 - Stránka nebyla nalezena</h1>
+
+        <p>Vámi požadovanou stránku jsme nenašli, ale možná vám pomůžeme najít
+          vysněné miliony.</p>
+
+        <br>
+        <br>
+        <br>
+
+        <p>Korunka je lotéria, v ktorej je v každom žrebovaní z čísel 1 až 49
+          vylosovaných 6 čísiel výherných.</p>
+
+        <ul>
+          <li>Losujeme 2x denne, 7 dní v týždni</li>
+          <li>Stávky prijímame už <strong>od 0,40 Eur</strong></li>
+          <li>Stačí <strong>uhádnuť 1 číslo</strong> a vyhrávate</li>
+          <li>Ponúkame rôzne typy stávkových hier</li>
+          <li>Za 0,40 Eur môžete vyhrať až 74 000 Eur</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="call-to-action">
+          Chcete si tiež staviť Lotérii Korunka?<br>
+          Potom navštívte niektorú z najbližších pobočiek Chance.
+        </div>
+
+        <ul class="pobocky">
+          <li>
+            <span class="nazev">Chance Břeclav</span><br>
+            J. Palacha 3197<br>
+            Tel.: <span class="telefon">+420 601 313 326</span>
+          </li>
+          <li>
+            <span class="nazev">Chance Kyjov</span><br>
+            Jiráskova 1133<br>
+            Tel.: <span class="telefon">+420 601 313 266</span>
+          </li>
+          <li>
+            <span class="nazev">Chance Vsetín</span><br>
+            Smetanova 848<br>
+            Tel.: <span class="telefon">+420 601 313 269</span>
+          </li>
+          <li>
+            <span class="nazev">Chance Jablunkov</span><br>
+            Bukovecká 106<br>
+            Tel.: <span class="telefon">+420 601 313 248</span>
+          </li>
+        </ul>
+      </section>
+
+    </section>
+  </section>
+</section>
+
+
+<footer>
+  <div class="container contact" style="position: relative">
+    <div class="left" style="float: left">
+      <p>
+        Copyright © 2013 - 2016
+        Loterie&nbsp;Korunka&nbsp;a.s.
+        <a href="/" class="open-in-new-tab">www.korunka.eu</a>
+        Všetky práva vyhradené.
+      </p>
+    </div>
+    <div class="right" style="float: right">
+      <p>
+        Volajte <strong>+420 233 090 890</strong> Po-Ne 8:00-19:00
+      </p>
+      <p>
+        Napíšte nám: <a href="mailto:info@korunka.eu">info@korunka.eu</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/vendor/jquery-ui-custom.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

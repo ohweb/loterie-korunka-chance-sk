@@ -1,28 +1,28 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 audio,
@@ -31,44 +31,305 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
-
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+body {
+	background: #641778;
+	font-size: 14px;
+	font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+	color: #fff;
+	overflow-y: scroll;
+}
 
+ul, ol {
+	margin: 0 20px 15px 22px;
+	padding: 0 0 0 10px;
+}
 
+/* ===== Hlavička ============== */
 
+header {
+	width: 100%;
+	min-width: 980px;
+	height: 240px;
+	background: #edbf1b url(/img/bg_head.png) no-repeat bottom center;
+	float: left;
+	clear: both;
+}
 
+header .container {
+	position: relative;
+	width: 952px;
+	height: 200px;
+	margin: 0 auto;
+}
 
+header .logo {
+	margin: 18px 0 0 0;
+	padding: 0;
+	float: left;
+}
 
+header .spousta-stastnych-control {
+	position: relative;
+	width: 462px;
+	height: 145px;
+	background: url(/img/bg_spousta-stastnych.png) no-repeat top left;
+	float: right;
+	margin: 47px 50px 0 0;
+}
 
+header .spousta-stastnych-control > h2 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50px;
+	left: -385px;
+	width: 287px;
+	height: 127px;
+	background: url(/img/img_spousta-vyhercu.png) no-repeat top left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 10000px;
+}
 
+header .spousta-stastnych-control a.moveLeft {
+	float: left;
+	margin: 65px 0 0 20px;
+	width: 8px;
+	height: 14px;
+	background: url(/img/btn_prev.png) no-repeat top left;
+	text-indent: 20px;
+	overflow: hidden;
+}
 
+header .spousta-stastnych-control a.moveRight {
+	float: left;
+	margin: 65px 0 0 0;
+	width: 8px;
+	height: 14px;
+	background: url(/img/btn_next.png) no-repeat top left;
+	text-indent: 20px;
+	overflow: hidden;
+}
 
+header .spousta-stastnych-control .list {
+	text-align: center;
+	float: left;
+	padding: 20px 0 0 0;
+	width: 400px;
+}
 
+header .spousta-stastnych-control .list p {
+	font: bold 14px/20px 'Trebuchet MS';
+	color: #f2ce45;
+	margin: 0;
+	padding: 0;
+}
 
+header .spousta-stastnych-control .list h3 {
+	font: 45px/54px Trebuchet MS;
+	margin: 0 0 6px 0;
+	text-align: center;
+}
 
+header .spousta-stastnych-control .list a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 36px;
+}
+
+/* ===== Tělo ================== */
+
+#page-bg-shadow {
+	width: 100%;
+	min-width: 980px;
+	min-height: 560px;
+	float: left;
+	clear: both;
+	padding-bottom: 25px;
+	background: url(/img/bg_blok-02-shadow.png) no-repeat top center;
+}
+
+#page-bg-top {
+	width: 100%;
+	min-width: 980px;
+	min-height: 560px;
+	float: left;
+	clear: both;
+	padding-bottom: 25px;
+	background: url(/img/bg_blok-02.png) no-repeat top center;
+}
+
+section.container {
+	width: 952px;
+	margin: 0 auto;
+}
+
+menu {
+	height: 60px;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+menu ul {
+	width: 100%;
+	margin: 13px 0 0 0;
+	padding: 0;
+	position: relative;
+	height: 40px;
+}
+
+menu ul li {
+	display: inline;
+	float: left;
+	list-style: none;
+	margin-right: 26px;
+}
+
+menu ul li a {
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+section.content h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: normal;
+	color: #f2ce45;
+	margin-bottom: 15px;
+}
+
+section.content > ul li {
+	font-size: 20px;
+	line-height: 24px;
+	padding: 4px 0;
+}
+
+section.content > ul li strong {
+	color: #f2ce45;
+}
+
+div.call-to-action {
+	text-align: center;
+	font-size: 21px;
+}
+
+ul.pobocky {
+	clear: both;
+}
+
+ul.pobocky li {
+	text-align: center;
+	width: 50%;
+	margin-top: 1em;
+	float: left;
+	list-style: none;
+}
+
+ul.pobocky li .nazev {
+	font-size: 1.2em;
+}
+
+ul.pobocky li .telefon {
+	color: #f2ce45;
+}
+
+/* ===== Patička =============== */
+
+footer {
+	width: 100%;
+	min-width: 980px;
+	padding: 28px 0 20px 0;
+	float: left;
+	clear: both;
+}
+
+footer .container {
+	min-height: 40px;
+	background: url(/img/bg_foot-new.png) no-repeat top center;
+	padding-top: 26px;
+	clear: both;
+	width: 952px;
+	margin: 0 auto;
+}
+
+footer p {
+	white-space: nowrap;
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #b18ebb;
+	font-size: 14px;
+}
+
+footer p a {
+	color: #b18ebb;
+	text-decoration: none;
+}
+
+footer div.right strong,
+footer div.right a {
+	color: #f2ce45;
+}
+
+/* ===== Spousta Štastných ===== */
+
+/* ===== Fonty ================= */
+@font-face {
+	font-family: 'Foco';
+	src: url('/fonts/foco_blkit-webfont.eot');
+	src: url('/fonts/foco_blkit-webfont.eot?#iefixv') format('embedded-opentype'),
+	url('/fonts/foco_blkit-webfont.woff') format('woff'),
+	url('/fonts/foco_blkit-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Foco';
+	src: url('/fonts/foco-webfont.eot');
+	src: url('/fonts/foco-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/foco-webfont.woff') format('woff'),
+	url('/fonts/foco-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Foco';
+	src: url('/fonts/focoblack-webfont.eot');
+	src: url('/fonts/focoblack-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/focoblack-webfont.woff') format('woff'),
+	url('/fonts/focoblack-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 
 /* ==========================================================================
    Media Queries
@@ -79,9 +340,9 @@ textarea {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
 
 }
 
@@ -90,47 +351,47 @@ textarea {
    ========================================================================== */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+	display: none !important;
+	visibility: hidden;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
 }
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 /* ==========================================================================
@@ -138,61 +399,61 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-    thead {
-        display: table-header-group;
-    }
+	thead {
+		display: table-header-group;
+	}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-    img {
-        max-width: 100% !important;
-    }
+	img {
+		max-width: 100% !important;
+	}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }

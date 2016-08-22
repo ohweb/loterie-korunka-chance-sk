@@ -28,7 +28,7 @@
      *
      * @type {string}
      */
-    var KORUNKA_URL_BASE = 'https://www.ondra.dev2.korunka.eu';
+    var KORUNKA_URL_BASE = 'http://www.ondra.dev2.korunka.eu';
 
 
 

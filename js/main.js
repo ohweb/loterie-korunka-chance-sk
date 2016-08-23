@@ -28,7 +28,7 @@
      *
      * @type {string}
      */
-    var KORUNKA_URL_BASE = 'https://www.ondra.dev2.korunka.eu';
+    var KORUNKA_URL_BASE = 'http://www.korunka.eu';
 
 
 
@@ -37,7 +37,7 @@
      *
      * @type {string}
      */
-    var KORUNKA_API_URI = '/api/aktualni-vyhry/aktualni-tikety';
+    var KORUNKA_API_URI = '/api/spousta-stastnych'; // /aktualni-tikety';
 
 
 

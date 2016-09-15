@@ -37,7 +37,7 @@
      *
      * @type {string}
      */
-    var KORUNKA_API_URI = '/api/spousta-stastnych'; // /aktualni-tikety';
+    var KORUNKA_API_URI = '/api/spousta-stastnych/aktualni-tikety';
 
 
 
